@@ -16,7 +16,7 @@ title_separator          : "-"
 subtitle                 : ""
 name                     : "Ying Zheng" # &name is a YAML anchor which can be *referenced later
 description              : "
-url                      : https://yingzheng-econ.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://yingzheng-econ.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/Econ_Power_Market" # the subpath of your site, e.g. "/blog"
 repository               : "yingzheng-econ/Econ_Power_Market"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"

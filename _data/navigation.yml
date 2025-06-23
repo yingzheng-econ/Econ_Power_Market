@@ -1,7 +1,7 @@
 # main links
-main:
-  - title: "电力经济学十讲"
-    url: /docs/quick-start-guide/
+#main:
+  #- title: "电力经济学十讲"
+    #url: /docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
@@ -13,11 +13,27 @@ main:
 
 # documentation links
 docs:
-  - title: Getting Started
+  - title: 基础内容
     children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
-      - title: "Structure"
+      - title: "第一讲"
         url:
-      - title: "Installation"
+      - title: "第二讲"
+        url:
+      - title: "第三讲"
+        url:
+      - title: "第四讲"
+        url:
+      - title: "第五讲"
+        url:
+  - title: 专题部分
+    children:
+      - title: "第六讲"
+        url:
+      - title: "第七讲"
+        url:
+      - title: "第八讲"
+        url:
+      - title: "第九讲"
+        url:
+      - title: "第十讲"
         url:

@@ -137,14 +137,14 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-  sidebar:
-    - title: "Title"
+  #sidebar:
+    #- title: "Title"
       #image: http://placehold.it/350x250
       #image_alt: "image"
-      text: "Some text here."
-    - title: "Another Title"
-      children:
-        - title: "Quick-Start Guide"
+      #text: "Some text here."
+    #- title: "Another Title"
+      #children:
+        #- title: "Quick-Start Guide"
 
 # Site Footer
 footer:

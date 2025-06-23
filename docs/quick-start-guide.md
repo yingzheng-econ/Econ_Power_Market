@@ -2,6 +2,7 @@
 title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
 toc: true
+layout: single
 sidebar:
   nav: "docs"
 ---

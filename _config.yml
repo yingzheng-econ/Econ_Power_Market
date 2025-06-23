@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -20,7 +20,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "电力经济学"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Ying Zheng"
+name                     : ""
 description              : ""
 url                      : "https://yingzheng-econ.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/Econ_Power_Market/" # the subpath of your site, e.g. "/blog"
@@ -113,10 +113,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Ying Zheng"
+  name             : ""
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Assistant Professor of Economics at the Renmin University of China."
-  location         : "Beijing"
+  bio              : ""
+  location         : ""
   email            :
   links:
     - label: "Email"
@@ -314,16 +314,16 @@ compress_html:
 # Defaults
 defaults:
   # _posts
-  #- scope:
-      #path: ""
-      #type: posts
-    #values:
-      #layout: single
-      #author_profile: false
-      #read_time: true
-      #comments: # true
-      #share: true
-      #related: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: # true
+      share: true
+      related: true
 
   # _docs
   - scope:

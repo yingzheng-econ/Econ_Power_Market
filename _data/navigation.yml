@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "电力经济学十讲"
-    url: /docs/quick-start-guide/
+    url: /_docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

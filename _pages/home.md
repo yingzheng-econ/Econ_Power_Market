@@ -1,6 +1,6 @@
 ---
-permalink: /
-hidden: true
+permalink: 
+hidden: false
 header:
   overlay_color: "#5e616c"
   actions:

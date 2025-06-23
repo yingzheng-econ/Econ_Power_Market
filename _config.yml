@@ -335,7 +335,7 @@ defaults:
 
   # _docs
   - scope:
-      path: "_data"
+      path: ""
       type: docs
     values:
       layout: single

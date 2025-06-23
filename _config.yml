@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "电力经济学十讲"
+title                    : "郑𬎆"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Ying Zheng"
@@ -113,9 +113,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "郑𬎆"
+  name             : "电力经济学十讲"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "中国人民大学应用经济学院助理教授"
+  bio              :
   #location         : "Somewhere"
   email            :
   links:

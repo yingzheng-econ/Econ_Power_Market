@@ -11,7 +11,7 @@
     <!-- 首页链接 -->
     <a class="sidebar-nav-item{% if page.title == '首页' %} active{% endif %}" href="{{ '/' | absolute_url }}">首页</a>
 
-    <!-- 动态生成多级导航 -->
+    <!-- 动态生成一级页面及其锚点子导航 -->
     {% assign pages_list = site.pages | sort: "order" %}
 
     {% for parent in pages_list %}
@@ -24,7 +24,11 @@
           <ul class="sidebar-subnav">
             {% for child in child_pages %}
               <li>
-                <a class="sidebar-subnav-item{% if page.url == child.url %} active{% endif %}" href="{{ child.url | absolute_url }}">{{ child.title }}</a>
+                <!-- 子页面链接指向父页面内锚点 -->
+                <a class="sidebar-subnav-item{% if page.url == parent.url and page.content contains child.title %} active{% endif %}"
+                   href="{{ parent.url | absolute_url }}#{{ child.title | slugify }}">
+                   {{ child.title }}
+                </a>
               </li>
             {% endfor %}
           </ul>

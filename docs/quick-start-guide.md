@@ -1,11 +1,11 @@
 ---
-title: "Quick-Start Guide"
-permalink: /docs/quick-start-guide/
+title: "课程简介"
+permalink: /docs/课程简介/
 toc: true
 layout: single
 sidebar:
   nav: "docs"
 ---
 
-Minimal Mistakes has been developed as a [Gem-based theme](http://jekyllrb.com/docs/themes/) for easier use, and 100% compatible with GitHub Pages when used as a remote theme.
+啦啦啦
 

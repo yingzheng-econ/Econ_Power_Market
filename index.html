@@ -3,25 +3,30 @@ layout: default
 title: 课程简介
 ---
 
-<h2></h2>
+<h1>{{ page.title }}</h1>
+{{ content }}
 
-<ul>
-  {% assign siblings = site.pages | where: "parent", page.title %}
-  {% for sibling in siblings %}
-    <li>
-      <strong><a href="{{ sibling.url | relative_url }}">{{ sibling.title }}</a></strong>
-      <ul>
-        {% assign children = site.pages | where: "parent", sibling.title %}
-        {% for child in children %}
-          <li><a href="{{ child.url | relative_url }}">{{ child.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </li>
-  {% endfor %}
-</ul>
+<hr>
+<h2>同级页面内容</h2>
 
-<p align="center">
-<img src="{{site.url}}/image/AM.png" height="400" width="700" />
-</p>
+{% assign current_dir = page.path | split: "/" | slice: 0, 1 | join: "/" %}
 
-啦啦啦
+{% for p in site.pages %}
+  {% assign path_parts = p.path | split: "/" %}
+  {% if path_parts.size == 1 and p.url != page.url %}
+    <h3>{{ p.title }}</h3>
+    {{ p.content }}
+  {% endif %}
+{% endfor %}
+
+<hr>
+<h2>下属页面内容</h2>
+
+{% assign current_prefix = page.path | split: "/" | first %}
+
+{% for p in site.pages %}
+  {% if p.path contains current_prefix and p.url != page.url %}
+    <h3>{{ p.title }}</h3>
+    {{ p.content }}
+  {% endif %}
+{% endfor %}

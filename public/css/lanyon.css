@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .wrap {
   position: relative;
-  width: 80%;
+  width: 100%;
 }
 
 
@@ -417,7 +417,7 @@ a.pagination-item:hover {
 }
 .layout-reverse .sidebar-toggle {
   left: auto;
-  right: 1rem;
+  right: 0rem;
 }
 
 .layout-reverse #sidebar-checkbox:checked ~ .sidebar,

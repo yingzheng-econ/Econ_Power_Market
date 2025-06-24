@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 课程信息
-order: 1
+order:1
 ---
 ***
 

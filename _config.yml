@@ -318,7 +318,7 @@ defaults:
   # _docs
   - scope:
       path: ""
-      type:
+      type: docs
   - values:
       layout: single
       read_time: false
@@ -332,7 +332,7 @@ defaults:
   # _pages
   - scope:
       path: ""
-      type: pages
+      type: posts
   - values:
       layout: single
 
@@ -342,8 +342,8 @@ defaults:
       type: posts
   - values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false

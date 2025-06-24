@@ -65,9 +65,9 @@ comments:
 reCaptcha:
   siteKey                :
   secret                 :
-atom_feed:
-  path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
+#atom_feed:
+  #path                   : # blank (default) uses feed.xml
+  #hide                   : # true, false (default)
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
@@ -137,14 +137,7 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-  #sidebar:
-    #- title: "Title"
-      #image: http://placehold.it/350x250
-      #image_alt: "image"
-      #text: "Some text here."
-    #- title: "Another Title"
-      #children:
-        #- title: "Quick-Start Guide"
+
 
 # Site Footer
 footer:

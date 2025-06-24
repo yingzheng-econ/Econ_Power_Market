@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "zh-CN"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "郑𬎆"
 title_separator          : "-"
@@ -335,3 +335,22 @@ defaults:
       toc_sticky: true
       sidebar:
         nav: "docs"
+
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+  - values:
+      layout: single
+
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+  - values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 课程计划
+title: 第二讲
 order: 3
 ---
 ***

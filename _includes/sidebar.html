@@ -9,7 +9,7 @@
 
   <nav class="sidebar-nav">
     <!-- 首页链接 -->
-    <a class="sidebar-nav-item{% if page.title == '首页' %} active{% endif %}" href="{{ '/' | absolute_url }}">首页</a>
+    <a class="sidebar-nav-item{% if page.title == '课程简介' %} active{% endif %}" href="{{ '/' | absolute_url }}">课程简介</a>
 
     <!-- 动态生成一级页面及其锚点子导航 -->
     {% assign pages_list = site.pages | sort: "order" %}

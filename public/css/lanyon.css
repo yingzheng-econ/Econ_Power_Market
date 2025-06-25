@@ -562,7 +562,7 @@ a.pagination-item:hover {
   /* Sidebar 顶部展开，内容居中对齐 */
   .sidebar {
     position: relative;
-    left: 0;
+    left: -14;
     width: 100%;
     max-width: 100%;
     visibility: visible;

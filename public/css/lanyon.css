@@ -556,3 +556,47 @@ a.pagination-item:hover {
 .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
+
+/* === 移动端优化：Sidebar 顶部展示 === */
+@media (max-width: 768px) {
+  /* Sidebar 不再 fixed，而是普通块 */
+  .sidebar {
+    position: relative;
+    left: auto;
+    width: 100%;
+    visibility: visible;
+    overflow: auto;
+    background-color: #f9f9f9;
+    color: #333;
+    z-index: auto;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .sidebar a {
+    color: #333;
+  }
+
+  .sidebar-nav-item {
+    border-top: 1px solid #ddd;
+    padding: 0.75rem 1rem;
+    background-color: #fff;
+  }
+
+  /* 不再偏移 wrap 内容 */
+  .wrap {
+    width: 100%;
+    transform: none !important;
+  }
+
+  /* 隐藏 toggle 控件 */
+  .sidebar-toggle,
+  #sidebar-checkbox {
+    display: none;
+  }
+
+  /* Sidebar title 样式改回白底黑字 */
+  .theme-base-0d .sidebar {
+    background-color: #f9f9f9;
+  }
+}

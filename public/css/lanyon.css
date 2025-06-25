@@ -557,64 +557,46 @@ a.pagination-item:hover {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
 
-/* === 移动端优化：Sidebar 顶部展示 === */
+/* === 移动端优化：将 Sidebar 顶部展开显示，无偏移 === */
 @media (max-width: 768px) {
-  /* Sidebar 顶部展开，内容居中对齐 */
   .sidebar {
-    position: relative;
-    left: -14;
-    width: 100%;
-    max-width: 100%;
-    visibility: visible;
-    overflow: auto;
+    position: relative !important;   /* 从 fixed → 普通流布局 */
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 1rem !important;
+    visibility: visible !important;
+    transform: none !important;
+    box-sizing: border-box;
     background-color: #f9f9f9;
     color: #333;
+    overflow-y: visible;
     z-index: auto;
-    padding: 1rem 1rem 0.5rem 1rem;
     border-bottom: 1px solid #ddd;
-    box-sizing: border-box;
   }
 
   .sidebar a {
-    color: #333;
-  }
-
-  .sidebar-nav {
-    padding: 0;
-    margin: 0;
+    color: #333 !important;
   }
 
   .sidebar-nav-item {
-    display: block;
-    width: 100%;
-    border-top: 1px solid #ddd;
-    padding: 0.75rem 1rem;
-    background-color: #fff;
-    box-sizing: border-box;
+    border-top: 1px solid #ddd !important;
+    padding: 0.75rem 1rem !important;
+    background-color: #fff !important;
   }
 
-  /* 子菜单也全宽显示 */
-  .sidebar-subnav {
-    margin: 0;
-    padding-left: 1rem;
-  }
-
-  .sidebar-subnav-item {
-    display: block;
-    padding: 0.5rem 0;
-    font-size: 0.95rem;
-  }
-
-  /* 不再偏移 wrap 内容 */
   .wrap {
-    width: 100%;
-    margin: 0;
-    padding: 0 1rem;
     transform: none !important;
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 0 1rem;
     box-sizing: border-box;
   }
 
-  /* 隐藏 toggle 控件 */
   .sidebar-toggle,
   #sidebar-checkbox {
     display: none !important;

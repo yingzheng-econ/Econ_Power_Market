@@ -559,44 +559,64 @@ a.pagination-item:hover {
 
 /* === 移动端优化：Sidebar 顶部展示 === */
 @media (max-width: 768px) {
-  /* Sidebar 不再 fixed，而是普通块 */
+  /* Sidebar 顶部展开，内容居中对齐 */
   .sidebar {
     position: relative;
-    left: auto;
+    left: 0;
     width: 100%;
+    max-width: 100%;
     visibility: visible;
     overflow: auto;
     background-color: #f9f9f9;
     color: #333;
     z-index: auto;
-    padding-bottom: 1rem;
+    padding: 1rem 1rem 0.5rem 1rem;
     border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
   }
 
   .sidebar a {
     color: #333;
   }
 
+  .sidebar-nav {
+    padding: 0;
+    margin: 0;
+  }
+
   .sidebar-nav-item {
+    display: block;
+    width: 100%;
     border-top: 1px solid #ddd;
     padding: 0.75rem 1rem;
     background-color: #fff;
+    box-sizing: border-box;
+  }
+
+  /* 子菜单也全宽显示 */
+  .sidebar-subnav {
+    margin: 0;
+    padding-left: 1rem;
+  }
+
+  .sidebar-subnav-item {
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
   }
 
   /* 不再偏移 wrap 内容 */
   .wrap {
     width: 100%;
+    margin: 0;
+    padding: 0 1rem;
     transform: none !important;
+    box-sizing: border-box;
   }
 
   /* 隐藏 toggle 控件 */
   .sidebar-toggle,
   #sidebar-checkbox {
-    display: none;
-  }
-
-  /* Sidebar title 样式改回白底黑字 */
-  .theme-base-0d .sidebar {
-    background-color: #f9f9f9;
+    display: none !important;
   }
 }

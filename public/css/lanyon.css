@@ -601,31 +601,33 @@ a.pagination-item:hover {
     display: none !important;
   }
 }
+
 /* === Font size overrides: shrink everything further === */
+
 body {
-  font-size: 0.75rem; /* 原来是约16px → 14px → 12px */
+  font-size: 0.625rem; /* 原为 ~1rem，现约 10px */
 }
 
 h1 {
-  font-size: 1.4rem;  /* 原本约2.0rem → 1.6rem → 1.4rem */
+  font-size: 1.1rem;  /* 原 h1 ~2rem，现约 1.1rem */
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
 }
 
 h3 {
-  font-size: 1.05rem;
-}
-
-h4 {
-  font-size: 1rem;
-}
-
-h5 {
   font-size: 0.95rem;
 }
 
-h6 {
+h4 {
   font-size: 0.9rem;
+}
+
+h5 {
+  font-size: 0.85rem;
+}
+
+h6 {
+  font-size: 0.8rem;
 }

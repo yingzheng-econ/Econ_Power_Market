@@ -605,11 +605,11 @@ a.pagination-item:hover {
 /* === Font size overrides: shrink everything further === */
 
 body {
-  font-size: 0.625rem; /* 原为 ~1rem，现约 10px */
+  font-size: 0.625rem; /* base font size ~10px */
 }
 
 h1 {
-  font-size: 1.1rem;  /* 原 h1 ~2rem，现约 1.1rem */
+  font-size: 1.1rem; /* further reduced */
 }
 
 h2 {
@@ -630,4 +630,49 @@ h5 {
 
 h6 {
   font-size: 0.8rem;
+}
+
+.page h1 {
+  font-size: 1.1rem;
+}
+
+.page h2 {
+  font-size: 1.0rem;
+}
+
+.page h3 {
+  font-size: 0.95rem;
+}
+
+.page h4 {
+  font-size: 0.9rem;
+}
+
+.page h5 {
+  font-size: 0.85rem;
+}
+
+.page h6 {
+  font-size: 0.8rem;
+}
+
+/*
+ * The rest of your original CSS continues below (unchanged)
+ */
+
+/* Prevent scroll on narrow devices */
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #313131;
+  letter-spacing: -.025rem;
 }

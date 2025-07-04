@@ -604,72 +604,70 @@ a.pagination-item:hover {
 
 /* === Font size overrides: shrink everything further === */
 
-body {
-  font-size: 0.75rem; /* base font size ~10px */
-}
-
-h1 {
-  font-size: 1.0rem; /* further reduced */
-}
-
-h2 {
-  font-size: 0.95rem;
-}
-
-h3 {
-  font-size: 0.9rem;
-}
-
-h4 {
-  font-size: 0.85rem;
-}
-
-h5 {
-  font-size: 0.8rem;
-}
-
-h6 {
-  font-size: 0.75rem;
-}
-
-.page h1 {
-  font-size: 1rem;
-}
-
-.page h2 {
-  font-size: 0.95rem;
-}
-
-.page h3 {
-  font-size: 0.9rem;
-}
-
-.page h4 {
-  font-size: 0.85rem;
-}
-
-.page h5 {
-  font-size: 0.80rem;
-}
-
-.page h6 {
-  font-size: 0.75rem;
-}
-
-/*
- * The rest of your original CSS continues below (unchanged)
- */
-
-/* Prevent scroll on narrow devices */
-html,
-body {
+/* 1. 设置html基准字体大小 */
+html {
+  font-size: 18px; /* 默认16px，调大让rem变大 */
+  font-family: "PT Serif", Georgia, "Times New Roman", serif;
   overflow-x: hidden;
 }
 
-html {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+/* 2. 正文使用rem单位字体，随html字体大小调整 */
+body {
+  font-size: 0.65rem; /* 0.65 * 18px = 11.7px，放大后的正文基础字体 */
+  overflow-x: hidden;
 }
 
+/* 3. 标题用px单位，保持绝对大小，不随html字体大小变化 */
+h1 {
+  font-size: 16px; /* 之前1rem基于16px，这里固定16px */
+}
+
+h2 {
+  font-size: 15px;
+}
+
+h3 {
+  font-size: 14.5px;
+}
+
+h4 {
+  font-size: 13.5px;
+}
+
+h5 {
+  font-size: 13px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+/* 4. 针对.page下的标题保持同样px大小 */
+.page h1 {
+  font-size: 16px;
+}
+
+.page h2 {
+  font-size: 15px;
+}
+
+.page h3 {
+  font-size: 14.5px;
+}
+
+.page h4 {
+  font-size: 13.5px;
+}
+
+.page h5 {
+  font-size: 13px;
+}
+
+.page h6 {
+  font-size: 12px;
+}
+
+/* 5. 字体族和样式保持不变 */
 h1, h2, h3, h4, h5, h6 {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;

@@ -351,6 +351,17 @@ a.sidebar-nav-item:focus {
   color: inherit;
 }
 
+/* 缩小页面正文的整体字体 */
+.page {
+  font-size: 0.875rem; /* 原来是约16px，现在是14px */
+  line-height: 1.6;
+}
+
+/* 缩小标题字体以匹配正文缩放 */
+.page h1, .page h2, .page h3, .page h4, .page h5, .page h6 {
+  font-size: 90%;
+}
+
 
 /*
  * Pagination

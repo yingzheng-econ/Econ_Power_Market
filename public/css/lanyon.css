@@ -605,7 +605,7 @@ a.pagination-item:hover {
 /* === Font size overrides: shrink everything further === */
 
 body {
-  font-size: 0.65rem; /* base font size ~10px */
+  font-size: 0.75rem; /* base font size ~10px */
 }
 
 h1 {
